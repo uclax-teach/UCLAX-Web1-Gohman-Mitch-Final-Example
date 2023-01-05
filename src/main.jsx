@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 /* React Router Dom ---------------------------*/
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 /* CSS Media Queries ---------------------------*/
 import { MediaQueryProvider } from '@/Common/useMediaQuery.jsx';
@@ -16,9 +16,9 @@ import '@/Common/css/global.scss';
 
 /* Injecct React in Page ---------------------------*/
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <BrowserRouter>
+    <HashRouter>
         <MediaQueryProvider>
             <App />
         </MediaQueryProvider>
-    </BrowserRouter>
+    </HashRouter>
 );
