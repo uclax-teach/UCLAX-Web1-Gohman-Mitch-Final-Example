@@ -1,7 +1,19 @@
+import image1 from './images/Alex-Esqueda.jpg';
+import image2 from './images/Silvie-Esqueda.jpg';
+import image3 from './images/Kara-Smith.jpg';
+import image4 from './images/Brook.jpg';
+import image5 from './images/Amber-Dyett.jpg';
+import image6 from './images/Dr-Skyler-Harms.jpg';
+import image7 from './images/Elisa-Eastwood.jpg';
+import image8 from './images/Jaque-Ong.jpg';
+import image9 from './images/John-Giron.jpg';
+import image10 from './images/Karlie-Goretski.jpg';
+import image11 from './images/Shana-Millspaugh.jpg';
+
 export const staffData = [
     {
         id: 1,
-        image: '/images/staff/Alex-Esqueda.jpg',
+        image: image1,
         name: 'Alex Esqueda',
         yearStarted: 2013,
         accolades: [
@@ -13,7 +25,7 @@ export const staffData = [
     },
     {
         id: 2,
-        image: '/images/staff/Silvie-Esqueda.jpg',
+        image: image2,
         name: 'Silvie Esqueda',
         yearStarted: 2013,
         accolades: [
@@ -25,7 +37,7 @@ export const staffData = [
     },
     {
         id: 3,
-        image: '/images/staff/Kara-Smith.jpg',
+        image: image3,
         name: 'Kara Smith',
         yearStarted: 2012,
         accolades: [
@@ -37,7 +49,7 @@ export const staffData = [
     },
     {
         id: 4,
-        image: '/images/staff/Brook.jpg',
+        image: image4,
         name: 'Brook',
         yearStarted: 2019,
         accolades: [
@@ -49,7 +61,7 @@ export const staffData = [
     },
     {
         id: 5,
-        image: '/images/staff/Amber-Dyett.jpg',
+        image: image5,
         name: 'Amber Dyett',
         yearStarted: 2016,
         accolades: [
@@ -61,7 +73,7 @@ export const staffData = [
     },
     {
         id: 6,
-        image: '/images/staff/Dr-Skyler-Harms.jpg',
+        image: image6,
         name: 'Dr Skyler Harms',
         yearStarted: 2010,
         accolades: [
@@ -73,7 +85,7 @@ export const staffData = [
     },
     {
         id: 7,
-        image: '/images/staff/Elisa-Eastwood.jpg',
+        image: image7,
         name: 'Elisa Eastwood',
         yearStarted: 2014,
         accolades: [
@@ -84,7 +96,7 @@ export const staffData = [
     },
     {
         id: 8,
-        image: '/images/staff/Jaque-Ong.jpg',
+        image: image8,
         name: 'Jaque Ong',
         yearStarted: 2012,
         accolades: [
@@ -96,7 +108,7 @@ export const staffData = [
     },
     {
         id: 9,
-        image: '/images/staff/John-Giron.jpg',
+        image: image9,
         name: 'John Giron',
         yearStarted: 2010,
         accolades: [
@@ -106,7 +118,7 @@ export const staffData = [
     },
     {
         id: 10,
-        image: '/images/staff/Karlie-Goretski.jpg',
+        image: image10,
         name: 'Karlie Goretski',
         yearStarted: 2015,
         accolades: [
@@ -116,7 +128,7 @@ export const staffData = [
     },
     {
         id: 11,
-        image: '/images/staff/Shana-Millspaugh.jpg',
+        image: image11,
         name: 'Shana Millspaugh',
         yearStarted: 2013,
         accolades: [
