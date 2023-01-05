@@ -1,27 +1,33 @@
+import slide1 from './images/Core-Strength.jpg';
+import slide2 from './images/Staff-In-Action.jpg';
+import slide3 from './images/Senior.jpg';
+import slide4 from './images/Group-Picture.jpg';
+import slide5 from './images/Aerial-Open-Gym.jpg';
+
 export const slidesData = [
     {
         id: 1,
-        image: 'images/slides/slides-assets/Core-Strength.jpg',
+        image: slide1,
         title: 'Core Strength',
     },
     {
         id: 2,
-        image: 'images/slides/slides-assets/Staff-In-Action.jpg',
+        image: slide2,
         title: 'Staff In Action',
     },
     {
         id: 3,
-        image: 'images/slides/slides-assets/Senior.jpg',
+        image: slide3,
         title: 'Senior',
     },
     {
         id: 4,
-        image: 'images/slides/slides-assets/Group-Picture.jpg',
+        image: slide4,
         title: 'Group Picture',
     },
     {
         id: 5,
-        image: 'images/slides/slides-assets/Aerial-Open-Gym.jpg',
+        image: slide5,
         title: 'Aerial Open Gym',
     },
 ]
