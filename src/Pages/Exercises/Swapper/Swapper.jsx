@@ -2,10 +2,9 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 /* Components ---------------------------*/
-import Inset from '@/Layout/Inset.jsx';
+import Head from '@/Layout/Head.jsx';
 
 /* Images ---------------------------*/
-import Head from '@/Layout/Head.jsx';
 import moonUrl from './moon.png';
 import sunUrl from './sun.png';
 
@@ -23,17 +22,15 @@ const Swapper = () => {
 
     return (
         <SwapperStyled className="Swapper">
-            <Head title="Swapper" />
-            <Inset>
-                <h1>Swapper</h1>
+            <Head title="Swapper :: Exercises" />
+            <h2>Swapper</h2>
 
-                <img
-                    src={ imgSrc }
-                    alt='The Moon'
-                    onMouseEnter={ changeToMoon }
-                    onMouseLeave={ changeToSun }
-                />
-            </Inset>
+            <img
+                src={ imgSrc }
+                alt='The Moon'
+                onMouseEnter={ changeToMoon }
+                onMouseLeave={ changeToSun }
+            />
         </SwapperStyled>
     );
 };

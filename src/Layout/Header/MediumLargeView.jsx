@@ -16,8 +16,8 @@ const MediumLargeView = () => {
                         <NavLink to={ '/' } end>Home</NavLink>
                         <NavLink to={ '/staff' }>Staff</NavLink>
                         <NavLink to={ '/contact' }>Contact</NavLink>
-                        <NavLink to={ '/swapper' }>Swapper</NavLink>
                         <NavLink to={ '/essays' }>Essays</NavLink>
+                        <NavLink to={ '/exercises' }>Exercises</NavLink>
                     </nav>
                 </div>
             </div>
