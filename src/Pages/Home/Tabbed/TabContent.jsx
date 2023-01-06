@@ -41,13 +41,10 @@ const TabContentStyled = styled.div`
     /* This is what will prefix for older IE browser for example */
     /* autoprefixer grid: autoplace */
 
-
-
     padding: 20px;
     background-color: teal;
 
     @media ${ breakpoints.isMediumAndUp } {
-        width: 100%;
         display: grid;
         grid-template-columns: 1fr 2fr;
         gap: 1rem;

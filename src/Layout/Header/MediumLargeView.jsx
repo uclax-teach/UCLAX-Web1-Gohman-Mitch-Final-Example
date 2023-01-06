@@ -29,12 +29,10 @@ export default MediumLargeView;
 
 const MediumLargeViewStyled = styled.div`
 .inset {
-    display: flex;
-    position: relative;
+    display: grid;
+    grid-template-columns: 25% 75%;
 
     .logo {
-        flex: 1;
-
         .SiteLogo {
             width: 80%;
             margin: auto;
@@ -43,40 +41,30 @@ const MediumLargeViewStyled = styled.div`
     }
 
     .menus {
-        flex: 4;
-
         display: flex;
         justify-content: flex-end;
         align-items: flex-end;
 
-        h2 { display: none;  }
-
-        a {
-            opacity: .8;
-            color: #84d4d4;
-            font-weight: bold;
-            text-decoration: none;
-            text-transform: uppercase;
-
-            &:hover, &:active, &:focus {
-                opacity: 1;
-            }
-        }
-
-        .mainMenu {
-            padding: 0px 0px 20px 0px;
-            display: flex;
-            justify-content: flex-end;
-            height: 50px;
-
+        nav.mainMenu {
             a {
                 width: 80px;
-                line-height: 30px;
-                text-align: center;
-                margin: 0px 0px 0px 5px;
-                font-size: 12px;
+                display: inline-block;
 
+                line-height: 30px;
+                margin: 0px 0px 20px 5px;
                 border-bottom: solid 3px #84d4d4;
+
+                text-align: center;
+                font-size: 12px;
+                opacity: .8;
+                color: #84d4d4;
+                font-weight: bold;
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover, &:active, &:focus {
+                    opacity: 1;
+                }
 
                 &.active {
                     color: white;

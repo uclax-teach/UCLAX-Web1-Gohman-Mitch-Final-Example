@@ -32,9 +32,7 @@ const SmallView = () => {
 
     return (
         <SmallViewStyled className="SmallView">
-            <div className="logo">
-                <SiteLogo />
-            </div>
+            <SiteLogo />
             <Hamburger showMenuUpdate={showMenuUpdate} showMenu={showMenu} />
             {showMenu && (
                 <nav className="mainMenu">
@@ -54,14 +52,19 @@ const SmallView = () => {
 export default SmallView;
 
 const SmallViewStyled = styled.div`
-    height: 300px;
+
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 20px;
 
     .SiteLogo {
-        max-width: 300px;
+        height: 300px;
+
+        display: flex;
+        align-items: center;
+
+        padding: 20px;
+        max-width: 330px;
+
     }
 
     .mainMenu {

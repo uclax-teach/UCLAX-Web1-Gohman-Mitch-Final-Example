@@ -21,12 +21,14 @@ export default TabMenuItem;
 const TabMenuItemStyled = styled.div`
     background-color: #014444;
     color: #17b1b1;
-    width: 150px;
     text-align: center;
     cursor: pointer;
     border-radius: 5px 5px 0px 0px;
     line-height: 40px;
     margin-right: 5px;
+
+    display: inline-block;
+    width: clamp(75px, 20%, 150px);
 
     &.selected {
         background-color: teal;
