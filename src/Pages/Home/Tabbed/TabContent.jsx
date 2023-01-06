@@ -7,10 +7,10 @@ import { breakpoints } from '@/Common/useMediaQuery.jsx';
 const TabContent = ({ curTab }) => {
     return (
         <TabContentStyled className='TabContent'>
-            <div className="left">
+            <div className="column1">
                 <img src={ curTab.image } alt={ curTab.title } />
             </div>
-            <div className="right">
+            <div className="column2">
                 <h3>{ curTab.title }</h3>
                 <div dangerouslySetInnerHTML={ { __html: curTab.text } } />
             </div>
@@ -21,27 +21,49 @@ const TabContent = ({ curTab }) => {
 export default TabContent;
 
 const TabContentStyled = styled.div`
+    /*
+        Further Reading
+
+        Ultimate Guid to Grid
+        https://css-tricks.com/snippets/css/complete-guide-grid/
+
+        Browser Suppport
+        https://caniuse.com/?search=grid
+
+        Prefixing Older Browsers - see example below
+        If you need to support older IE, and this is not a gaurantee
+        https://github.com/postcss/autoprefixer#does-autoprefixer-polyfill-grid-layout-for-ie
+
+        Fractional Units Explained:
+        https://css-tricks.com/introduction-fr-css-unit/
+    */
+
+    /* This is what will prefix for older IE browser for example */
+    /* autoprefixer grid: autoplace */
+
+
+
     padding: 20px;
     background-color: teal;
 
     @media ${ breakpoints.isMediumAndUp } {
-        display: flex;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
     }
 
-    .left {
-        flex: 1;
+    .column1 {
         img {
-            width: 100%;
+            display: block;
+            max-width: 100%;
+            margin: 0px auto 15px;
+            @media ${ breakpoints.isMediumAndUp } {
+                margin: 0px;
+            }
         }
     }
-    .right {
-        flex: 3;
-        margin: 20px 0px 0px;
-
-        @media ${ breakpoints.isMediumAndUp } {
-            margin: 0px 0px 0px 20px;
-        }
-
+    .column2 {
         h3 {
             font-size: 30px;
             color: white;
