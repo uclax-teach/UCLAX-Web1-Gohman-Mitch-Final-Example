@@ -1,9 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-/* CSS Media Queries ---------------------------*/
-import { breakpoints } from '@/Common/useMediaQuery.jsx';
-
 /* Components ---------------------------*/
 import AccoladesList from './Accolades/AccoladesList.jsx';
 
@@ -28,23 +25,10 @@ const StaffMemberStyled = styled.div`
 
     background-color: teal;
 
-    width: 100%;
-    margin: 5px 0px;
-
-    @media ${breakpoints.isMediumAndUp} {
-        width: 30%;
-        margin: 15px;
-    }
-
-    @media ${breakpoints.isLargeAndUp} {
-        width: 20%;
-        margin: 20px;
-    }
-
     img {
         width: 100%;
         display: block;
-        min-height: 150px;
+        /* min-height: 150px; */
     }
 
     .bottom {
