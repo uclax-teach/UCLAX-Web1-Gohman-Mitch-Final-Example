@@ -1173,18 +1173,20 @@ object-assign
         `;console.log(v),t(!0)},children:[q("div",{className:"form-group",children:[k("label",{htmlFor:"name",children:"Name:"}),k("input",{type:"text",id:"name",name:"name",value:n,onChange:p=>{r(p.target.value)}})]}),q("div",{className:"form-group",children:[k("label",{htmlFor:"email",children:"Email:"}),k("input",{type:"text",id:"email",name:"email",value:i,onChange:p=>{a(p.target.value)}})]}),q("div",{className:"form-group",children:[k("label",{htmlFor:"message",children:"Message:"}),k("textarea",{type:"text",id:"message",name:"message",value:o,onChange:p=>{l(p.target.value)}})]}),k("footer",{children:k("button",{type:"submit",children:"Send"})})]})})},LE=le.div`
 
     .messageSent {
+        background-color: teal;
+        color: white;
+        width: clamp(200px, 100%, 500px);
+
         text-align: center;
-        color: teal;
+        margin: 50px auto;
         font-size: 30px;
         font-weight: bold;
-        margin: 50px 50px;
-        padding: 50px 0px;
-        border: solid 2px teal;
-
+        padding: 30px;
+        border-radius: 10px;
     }
 
     form {
-        max-width: 600px;
+        width: clamp(300px, 100%, 600px);
         margin: 0px auto;
     }
 
