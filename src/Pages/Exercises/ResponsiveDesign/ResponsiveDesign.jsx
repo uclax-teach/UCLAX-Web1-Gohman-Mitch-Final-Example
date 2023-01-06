@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
 /* CSS Media Queries ---------------------------*/
-import { breakpoints } from '@/Common/useMediaQuery.jsx';
+import { breakpoints, useMediaQuery } from '@/Common/useMediaQuery.jsx';
 
 /* Components ---------------------------*/
 import Head from '@/Layout/Head.jsx';
 
 const ResponsiveDesign = () => {
+
+    const { isMediumAndUp } = useMediaQuery();
+
     return (
         <ResponsiveDesignStyled className="ResponsiveDesign">
             <Head title="Responsive Design :: Exercises" />
@@ -21,6 +24,12 @@ const ResponsiveDesign = () => {
                 earum voluptates voluptatibus quibusdam eius error molestias
                 provident?
             </p>
+
+            {
+                isMediumAndUp &&
+                <div>Do not show in small view.</div>
+            }
+
         </ResponsiveDesignStyled>
     );
 };
@@ -38,8 +47,20 @@ const ResponsiveDesignStyled = styled.div`
     }
     p {
         margin: 50px 0px;
-        padding: 20px;
+        /* padding: 20px; */
         background-color: yellow;
+
+        /* width: 80%;
+        max-width: 600px;
+        min-width: 300px; */
+
+        /* width: clamp(70%, 600px, 300px); */
+
+        /* padding: 3vw; */
+        /* font-size: 3vw; */
+
+        padding: clamp(20px, 3vw, 40px);
+        font-size: clamp(1rem, 3vw, 2rem);
     }
 
     @media ${breakpoints.isMediumAndUp} {
