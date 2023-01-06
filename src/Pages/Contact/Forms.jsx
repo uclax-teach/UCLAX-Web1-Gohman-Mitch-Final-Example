@@ -72,18 +72,20 @@ export default Forms;
 const FormsStyled = styled.div`
 
     .messageSent {
+        background-color: teal;
+        color: white;
+        width: clamp(200px, 100%, 500px);
+
         text-align: center;
-        color: teal;
+        margin: 50px auto;
         font-size: 30px;
         font-weight: bold;
-        margin: 50px 50px;
-        padding: 50px 0px;
-        border: solid 2px teal;
-
+        padding: 30px;
+        border-radius: 10px;
     }
 
     form {
-        max-width: 600px;
+        width: clamp(300px, 100%, 600px);
         margin: 0px auto;
     }
 
