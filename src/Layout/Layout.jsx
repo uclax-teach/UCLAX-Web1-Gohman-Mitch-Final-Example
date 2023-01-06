@@ -1,17 +1,15 @@
 import styled from 'styled-components';
 import { Outlet } from 'react-router-dom';
 
+/* Components ---------------------------*/
 import Header from './Header/Header.jsx';
-import Content from './Content.jsx';
 import Footer from './Footer.jsx';
 
 const Layout = () => {
     return (
         <LayoutStyled className="Layout">
             <Header />
-            <Content>
-                <Outlet />
-            </Content>
+            <Outlet />
             <Footer />
         </LayoutStyled>
     );
@@ -19,4 +17,13 @@ const Layout = () => {
 
 export default Layout;
 
-const LayoutStyled = styled.div``;
+const LayoutStyled = styled.div`
+    main {
+        background-color: #fff;
+        min-height: 600px;
+
+        .Inset {
+            padding: 50px 10px;
+        }
+    }
+`;
