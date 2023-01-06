@@ -23,12 +23,11 @@ export default StaffMember;
 
 const StaffMemberStyled = styled.div`
 
-    background-color: teal;
+    background-color: #eee;
 
     img {
         width: 100%;
         display: block;
-        /* min-height: 150px; */
     }
 
     .bottom {
