@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import { Outlet, NavLink } from 'react-router-dom';
 
-import Inset from '@/Layout/Inset.jsx';
+import Inset from '@/Common/Inset.jsx';
 
-const ContentLayoutExercises = () => {
+const ContentExercisesLayout = () => {
     return (
-        <ContentLayoutExercisesStyled className='ContentLayoutExercises'>
+        <ContentExercisesLayoutStyled className='ContentExercisesLayout'>
             <Inset>
                 <h2>Exercises</h2>
                 <nav className="sublinks">
@@ -14,12 +14,12 @@ const ContentLayoutExercises = () => {
                 </nav>
                 <Outlet />
             </Inset>
-        </ContentLayoutExercisesStyled>
+        </ContentExercisesLayoutStyled>
     );
 }
 
-export default ContentLayoutExercises;
+export default ContentExercisesLayout;
 
-const ContentLayoutExercisesStyled = styled.main`
+const ContentExercisesLayoutStyled = styled.main`
 
 `;

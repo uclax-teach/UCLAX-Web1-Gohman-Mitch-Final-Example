@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 /* Components ---------------------------*/
-import SiteLogo from '@/Layout/SiteLogo/SiteLogo.jsx';
-import Hamburger from '@/Layout/Header/Hamburger.jsx';
+import SiteLogo from '@/Common/SiteLogo/SiteLogo.jsx';
+import Hamburger from './Hamburger.jsx';
 
 const SmallView = () => {
 

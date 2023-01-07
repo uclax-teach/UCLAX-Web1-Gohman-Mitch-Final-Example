@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { useMediaQuery } from '@/Common/useMediaQuery.jsx';
 
 /* Components ---------------------------*/
-import Inset from '@/Layout/Inset.jsx';
+import Inset from '@/Common/Inset.jsx';
 import SmallView from './SmallView.jsx';
 import MediumLargeView from './MediumLargeView.jsx';
 

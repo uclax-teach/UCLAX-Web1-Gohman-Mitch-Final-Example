@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 
-const Head = ({ title }) => {
+const PageMeta = ({ title }) => {
     return (
         <Helmet>
             <title>{title} :: CrossFit Decimate</title>
@@ -8,4 +8,4 @@ const Head = ({ title }) => {
     );
 };
 
-export default Head;
+export default PageMeta;

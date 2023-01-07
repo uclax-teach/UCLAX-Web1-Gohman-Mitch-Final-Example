@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 /* Components ---------------------------*/
-import Head from '@/Layout/Head.jsx';
+import PageMeta from '@/Common/PageMeta.jsx';
 
 /* Images ---------------------------*/
 import moonUrl from './moon.png';
@@ -22,7 +22,7 @@ const Swapper = () => {
 
     return (
         <SwapperStyled className="Swapper">
-            <Head title="Swapper :: Exercises" />
+            <PageMeta title="Swapper :: Exercises" />
             <h2>Swapper</h2>
 
             <img

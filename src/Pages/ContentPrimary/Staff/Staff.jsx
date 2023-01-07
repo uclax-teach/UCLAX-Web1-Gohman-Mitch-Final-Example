@@ -4,14 +4,14 @@ import styled from 'styled-components';
 import { staffData } from './staffData.js';
 
 /* Components ---------------------------*/
-import Head from '@/Layout/Head.jsx';
-import Inset from '@/Layout/Inset.jsx';
+import PageMeta from '@/Common/PageMeta.jsx';
+import Inset from '@/Common/Inset.jsx';
 import StaffMember from './StaffMember.jsx';
 
 const Staff = () => {
     return (
         <StaffStyled className="Staff">
-            <Head title="Staff" />
+            <PageMeta title="Staff" />
             <Inset>
                 <h1>Staff</h1>
                 <div className="wrapper">

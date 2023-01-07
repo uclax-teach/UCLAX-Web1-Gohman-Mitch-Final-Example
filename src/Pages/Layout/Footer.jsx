@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 /* Components ---------------------------*/
-import Inset from '@/Layout/Inset.jsx';
-import SiteLogo from '@/Layout/SiteLogo/SiteLogo.jsx';
+import Inset from '@/Common/Inset.jsx';
+import SiteLogo from '@/Common/SiteLogo/SiteLogo.jsx';
 
 const Footer = () => {
     return (

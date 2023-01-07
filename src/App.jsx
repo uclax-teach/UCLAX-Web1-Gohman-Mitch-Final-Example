@@ -1,38 +1,36 @@
 import { Routes, Route } from 'react-router-dom';
 
-/* Layouts ---------------------------*/
-import Layout from '@/Layout/Layout.jsx';
-import LayoutContentPrimary from '@/Layout/Content/Primary.jsx';
-import LayoutContentExercises from '@/Layout/Content/Exercises.jsx';
+/* Pages: Layout ---------------------------*/
+import PagesLayout from '@/Pages/PagesLayout.jsx';
 
-/* Pages ---------------------------*/
-import Home from '@/Pages/Home/Home.jsx';
-import Staff from '@/Pages/Staff/Staff.jsx';
-import Contact from '@/Pages/Contact/Contact.jsx';
-import Essays from '@/Pages/Essays/Essays.jsx';
+/* Pages: Primary ---------------------------*/
+import ContentPrimaryLayout from '@/Pages/ContentPrimary/ContentPrimaryLayout.jsx';
+import Home from '@/Pages/ContentPrimary/Home/Home.jsx';
+import Staff from '@/Pages/ContentPrimary/Staff/Staff.jsx';
+import Contact from '@/Pages/ContentPrimary/Contact/Contact.jsx';
+import Essays from '@/Pages/ContentPrimary/Essays/Essays.jsx';
 
-// Exercises
-import Swapper from '@/Pages/Exercises/Swapper/Swapper.jsx';
-import ResponsiveDesign from '@/Pages/Exercises/ResponsiveDesign/ResponsiveDesign.jsx';
+// Pages: Exercises
+import ContentExercisesLayout from '@/Pages/ContentExercises/ContentExercisesLayout.jsx';
+import Swapper from '@/Pages/ContentExercises/Swapper/Swapper.jsx';
+import ResponsiveDesign from '@/Pages/ContentExercises/ResponsiveDesign/ResponsiveDesign.jsx';
 
 const App = () => {
     return (
-        <>
-            <Routes>
-                <Route element={<Layout />}>
-                    <Route element={<LayoutContentPrimary />} path="">
-                        <Route element={<Home />} path="" />
-                        <Route element={<Staff />} path="staff" />
-                        <Route element={<Contact />} path="contact" />
-                        <Route element={<Essays />} path="essays" />
-                    </Route>
-                    <Route element={<LayoutContentExercises />} path="exercises">
-                        <Route element={<Swapper />} path="" />
-                        <Route element={<ResponsiveDesign />} path="responsive-design" />
-                    </Route>
+        <Routes>
+            <Route element={<PagesLayout />}>
+                <Route element={<ContentPrimaryLayout />} path="">
+                    <Route element={<Home />} path="" />
+                    <Route element={<Staff />} path="staff" />
+                    <Route element={<Contact />} path="contact" />
+                    <Route element={<Essays />} path="essays" />
                 </Route>
-            </Routes>
-        </>
+                <Route element={<ContentExercisesLayout />} path="exercises">
+                    <Route element={<Swapper />} path="" />
+                    <Route element={<ResponsiveDesign />} path="responsive-design" />
+                </Route>
+            </Route>
+        </Routes>
     );
 };
 

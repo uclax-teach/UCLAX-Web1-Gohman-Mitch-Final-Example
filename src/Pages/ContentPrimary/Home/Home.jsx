@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 /* Components ---------------------------*/
-import Head from '@/Layout/Head.jsx';
-import Inset from '@/Layout/Inset.jsx';
+import PageMeta from '@/Common/PageMeta.jsx';
+import Inset from '@/Common/Inset.jsx';
 import Slideshow from './Slideshow/Slideshow.jsx';
 import Tabbed from './Tabbed/Tabbed.jsx';
 
 const Home = () => {
     return (
         <HomeStyled className="Home">
-            <Head title="Home" />
+            <PageMeta title="Home" />
             <h1>Home</h1>
             <Slideshow />
             <Inset>

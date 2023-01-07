@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { breakpoints, useMediaQuery } from '@/Common/useMediaQuery.jsx';
 
 /* Components ---------------------------*/
-import Head from '@/Layout/Head.jsx';
+import PageMeta from '@/Common/PageMeta.jsx';
 
 const ResponsiveDesign = () => {
 
@@ -12,7 +12,7 @@ const ResponsiveDesign = () => {
 
     return (
         <ResponsiveDesignStyled className="ResponsiveDesign">
-            <Head title="Responsive Design :: Exercises" />
+            <PageMeta title="Responsive Design :: Exercises" />
             <h2>Responsive Design</h2>
 
             <div className="box"></div>

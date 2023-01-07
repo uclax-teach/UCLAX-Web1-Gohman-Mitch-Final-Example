@@ -2,22 +2,22 @@ import styled from 'styled-components';
 import { Outlet } from 'react-router-dom';
 
 /* Components ---------------------------*/
-import Header from './Header/Header.jsx';
-import Footer from './Footer.jsx';
+import Header from './Layout/Header/Header.jsx';
+import Footer from './Layout/Footer.jsx';
 
-const Layout = () => {
+const PagesLayout = () => {
     return (
-        <LayoutStyled className="Layout">
+        <PagesLayoutStyled className="PagesLayout">
             <Header />
             <Outlet />
             <Footer />
-        </LayoutStyled>
+        </PagesLayoutStyled>
     );
 };
 
-export default Layout;
+export default PagesLayout;
 
-const LayoutStyled = styled.div`
+const PagesLayoutStyled = styled.div`
     main {
         background-color: #fff;
         min-height: 600px;

@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 /* Components ---------------------------*/
-import Head from '@/Layout/Head.jsx';
-import Inset from '@/Layout/Inset.jsx';
+import PageMeta from '@/Common/PageMeta.jsx';
+import Inset from '@/Common/Inset.jsx';
 import Forms from './Forms.jsx';
 
 const Contact = () => {
     return (
         <ContactStyled className="Contact">
-            <Head title="Contact" />
+            <PageMeta title="Contact" />
             <Inset>
                 <h1>Contact</h1>
                 <Forms />

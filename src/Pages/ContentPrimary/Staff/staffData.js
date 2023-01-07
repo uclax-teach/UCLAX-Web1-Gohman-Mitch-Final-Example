@@ -17,7 +17,7 @@ export const staffData = [
         name: 'Alex Esqueda',
         yearStarted: 2013,
         accolades: [
-            'Co-Owner, Head Coach ',
+            'Co-Owner, PageMeta Coach ',
             'Program Designer CrossFit Decimate ',
             'Decimate Performance Training ',
             'CCFT/L-3 Certified CrossFit Trainer',
@@ -100,7 +100,7 @@ export const staffData = [
         name: 'Jaque Ong',
         yearStarted: 2012,
         accolades: [
-            'Head Olympic Lifting Coach',
+            'PageMeta Olympic Lifting Coach',
             'U.S.A.W',
             'IKKF Instructor',
             'Sports & Performance Cert Trainer',

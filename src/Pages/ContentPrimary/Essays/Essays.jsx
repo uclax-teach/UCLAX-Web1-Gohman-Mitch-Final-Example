@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 /* Components ---------------------------*/
-import Head from '@/Layout/Head.jsx';
-import Inset from '@/Layout/Inset.jsx';
+import PageMeta from '@/Common/PageMeta.jsx';
+import Inset from '@/Common/Inset.jsx';
 import Essay from './Essay.jsx';
 
 const Essays = () => {
     return (
         <EssaysStyled EssaysName="Essays">
-            <Head title="Essays" />
+            <PageMeta title="Essays" />
             <Inset>
                 <h1>Essays</h1>
 
