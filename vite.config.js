@@ -16,6 +16,6 @@ export default defineConfig(({ command, mode }) => {
         build: {
             outDir: './build',
         },
-        base: '/Uclax-Gohman-Mitch-Final-Example/',
+        base: '/UCLAX-Web1-Gohman-Mitch-Final-Example/',
     };
 });
