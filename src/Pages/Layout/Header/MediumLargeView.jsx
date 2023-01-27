@@ -13,11 +13,10 @@ const MediumLargeView = () => {
                 </div>
                 <div className="menus">
                     <nav className='mainMenu'>
-                        <NavLink to={ '/' } end>Home</NavLink>
-                        <NavLink to={ '/staff' }>Staff</NavLink>
-                        <NavLink to={ '/contact' }>Contact</NavLink>
-                        <NavLink to={ '/essays' }>Essays</NavLink>
-                        <NavLink to={ '/exercises' }>Exercises</NavLink>
+                        <NavLink to={'/'} end>Home</NavLink>
+                        <NavLink to={'/staff'}>Staff</NavLink>
+                        <NavLink to={'/contact'}>Contact</NavLink>
+                        <NavLink to={'/course-work'}>Course</NavLink>
                     </nav>
                 </div>
             </div>

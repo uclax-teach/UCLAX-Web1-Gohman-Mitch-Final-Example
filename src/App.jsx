@@ -8,12 +8,12 @@ import ContentPrimaryLayout from '@/Pages/ContentPrimary/ContentPrimaryLayout.js
 import Home from '@/Pages/ContentPrimary/Home/Home.jsx';
 import Staff from '@/Pages/ContentPrimary/Staff/Staff.jsx';
 import Contact from '@/Pages/ContentPrimary/Contact/Contact.jsx';
-import Essays from '@/Pages/ContentPrimary/Essays/Essays.jsx';
 
-// Pages: Exercises
-import ContentExercisesLayout from '@/Pages/ContentExercises/ContentExercisesLayout.jsx';
-import Swapper from '@/Pages/ContentExercises/Swapper/Swapper.jsx';
-import ResponsiveDesign from '@/Pages/ContentExercises/ResponsiveDesign/ResponsiveDesign.jsx';
+// Pages: Course Work
+import ContentCourseWorkLayout from '@/Pages/ContentCourseWork/ContentCourseWorkLayout.jsx';
+import Essays from '@/Pages/ContentCourseWork/Essays/Essays.jsx';
+import Swapper from '@/Pages/ContentCourseWork/Swapper/Swapper.jsx';
+import ResponsiveDesign from '@/Pages/ContentCourseWork/ResponsiveDesign/ResponsiveDesign.jsx';
 
 const App = () => {
     return (
@@ -23,10 +23,10 @@ const App = () => {
                     <Route element={<Home />} path="" />
                     <Route element={<Staff />} path="staff" />
                     <Route element={<Contact />} path="contact" />
-                    <Route element={<Essays />} path="essays" />
                 </Route>
-                <Route element={<ContentExercisesLayout />} path="exercises">
-                    <Route element={<Swapper />} path="" />
+                <Route element={<ContentCourseWorkLayout />} path="course-work">
+                    <Route element={<Essays />} path="" />
+                    <Route element={<Swapper />} path="sun-and-moon" />
                     <Route element={<ResponsiveDesign />} path="responsive-design" />
                 </Route>
             </Route>

@@ -41,8 +41,7 @@ const SmallView = () => {
                     </NavLink>
                     <NavLink onClick={ onClick } to={'/staff'}>Staff</NavLink>
                     <NavLink onClick={ onClick } to={'/contact'}>Contact</NavLink>
-                    <NavLink onClick={ onClick } to={'/essays'}>Essays</NavLink>
-                    <NavLink onClick={ onClick } to={'/exercises'}>Exercises</NavLink>
+                    <NavLink onClick={ onClick } to={'/course-work'}>Course</NavLink>
                 </nav>
             )}
         </SmallViewStyled>
