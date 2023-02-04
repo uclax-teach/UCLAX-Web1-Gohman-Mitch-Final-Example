@@ -7,7 +7,6 @@ import { breakpoints, useMediaQuery } from '@/Common/useMediaQuery.jsx';
 import PageMeta from '@/Common/PageMeta.jsx';
 
 const ResponsiveDesign = () => {
-
     const { isMediumAndUp } = useMediaQuery();
 
     return (
@@ -15,21 +14,11 @@ const ResponsiveDesign = () => {
             <PageMeta title="Responsive Design :: Exercises" />
             <h2>Responsive Design</h2>
 
-            <div className="box"></div>
-
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Laboriosam exercitationem illum, rerum ex perspiciatis
-                consequatur asperiores reiciendis natus non placeat at corporis
-                earum voluptates voluptatibus quibusdam eius error molestias
-                provident?
-            </p>
-
-            {
-                isMediumAndUp &&
-                <div>Do not show in small view.</div>
-            }
-
+            <div className="boxes">
+                {isMediumAndUp && <div className="box box1">1</div>}
+                <div className="box box2">2</div>
+                <div className="box box3">3</div>
+            </div>
         </ResponsiveDesignStyled>
     );
 };
@@ -37,46 +26,40 @@ const ResponsiveDesign = () => {
 export default ResponsiveDesign;
 
 const ResponsiveDesignStyled = styled.div`
+    @media ${breakpoints.isMediumAndUp} {
+        .boxes {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
     .box {
         width: 100%;
-        max-width: 400px;
-        height: 400px;
-
-        border: solid 20px black;
-        background-color: rebeccapurple;
+        max-width: 200px;
+        height: 200px;
+        margin: 10px;
+        font-size: 50px;
+        text-align: center;
+        line-height: 200px;
+        color: white;
+        background-color: Teal;
     }
-    p {
-        margin: 50px 0px;
-        /* padding: 20px; */
-        background-color: yellow;
-
-        /* width: 80%;
-        max-width: 600px;
-        min-width: 300px; */
-
-        /* width: clamp(70%, 600px, 300px); */
-
-        /* padding: 3vw; */
-        /* font-size: 3vw; */
-
-        padding: clamp(20px, 3vw, 40px);
-        font-size: clamp(1rem, 3vw, 2rem);
+    .box2 {
+        border-radius: 40px;
+    }
+    .box3 {
+        border-radius: 100px;
     }
 
     @media ${breakpoints.isMediumAndUp} {
-        p {
-            background-color: red;
+        .box {
+            background-color: Indigo;
         }
     }
 
-    @media (orientation: landscape) {
+    @media ${breakpoints.isLargeAndUp} {
         .box {
-            background-color: red;
-        }
-    }
-    @media (min-aspect-ratio: 16 / 9) {
-        .box {
-            border: solid 30px green;
+            background-color: Green;
         }
     }
 `;
