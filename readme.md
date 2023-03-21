@@ -2,4 +2,4 @@
 
 The finished example of what we will build in this course.
 
-Chhanges 2
+Changes 2
